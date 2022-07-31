@@ -84,7 +84,7 @@ const Intro = () => {
   const settings = {
     arrows: false,
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     autoplay: true,
     autoplaySpeed: 2000,

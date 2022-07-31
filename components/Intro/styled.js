@@ -21,7 +21,7 @@ export const IntroContainerHeader = styled.div`
     margin: 0 auto;
 
     @media screen and (max-width: 620px) {
-        width: 85%;
+        width: 94%;
     }
 `;
 
@@ -287,7 +287,7 @@ export const IntroArticleContainerCarouselItem = styled.div`
 export const IntroArticleContainerCarouselItemImage = styled.button`
     padding: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     border: none;
     cursor: grabbing;
 
