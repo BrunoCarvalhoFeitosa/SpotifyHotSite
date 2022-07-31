@@ -15,12 +15,8 @@ export const SingersGalleryContainer = styled.div`
 export const SingersGalleryContainerItem = styled.div`
     position: relative;
     width: calc(100% / 2 - 20px);
-    filter: brightness(0.25);
+    filter: brightness(0.8);
     overflow: hidden;
-    
-    &:hover {
-        filter: brightness(.47);
-    }
 
     @media screen and (max-width: 1080px) {
         width: 100%;

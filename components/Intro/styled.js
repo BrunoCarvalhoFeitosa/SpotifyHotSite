@@ -275,7 +275,6 @@ export const IntroArticleContainerCarousel = styled.div`
 export const IntroArticleContainerCarouselItem = styled.div`
     position: relative;
     box-sizing: border-box;
-    background: #222;
     
     @media screen and (min-width: 1081px) {
         margin-left: 40px;
