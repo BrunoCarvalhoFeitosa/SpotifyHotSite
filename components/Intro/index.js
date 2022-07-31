@@ -228,7 +228,13 @@ const Intro = () => {
           <S.IntroArticleContainerCarousel>
             <Slider {...settings}>
               <S.IntroArticleContainerCarouselItem>
-                <S.IntroArticleContainerCarouselItemImage>
+                <S.IntroArticleContainerCarouselItemImage
+                  onClick={
+                    isPlayingFirstAudio === false
+                      ? playFirstAudio
+                      : pauseFirstAudio
+                  }
+                >
                   <Image
                     src={ImageFiftyCent}
                     width='0'
@@ -242,20 +248,20 @@ const Intro = () => {
                     src={require('../../public/audio/artistmusic01.mp3')}
                     ref={audioPlayerFirst}
                   />
-                  <S.IntroArticleContainerCarouselItemButton
-                    onClick={
-                      isPlayingFirstAudio === false
-                        ? playFirstAudio
-                        : pauseFirstAudio
-                    }
-                  >
-                    {isPlayingFirstAudio === false ? <PlayIcon /> : <PauseIcon /> }
+                  <S.IntroArticleContainerCarouselItemButton>
+                    { isPlayingFirstAudio === false ? <PlayIcon /> : <PauseIcon /> }
                   </S.IntroArticleContainerCarouselItemButton>
                 </S.IntroArticleContainerCarouselItemWrapper>
               </S.IntroArticleContainerCarouselItem>
 
               <S.IntroArticleContainerCarouselItem>
-                <S.IntroArticleContainerCarouselItemImage>
+                <S.IntroArticleContainerCarouselItemImage
+                  onClick={
+                    isPlayingSecondAudio === false
+                        ? playSecondAudio
+                        : pauseSecondAudio
+                  }
+                >
                   <Image
                     src={imageBillieEilish}
                     width='0'
@@ -269,19 +275,19 @@ const Intro = () => {
                     src={require('../../public/audio/artistmusic02.mp3')}
                     ref={audioPlayerSecond}
                   />
-                  <S.IntroArticleContainerCarouselItemButton
-                    onClick={
-                      isPlayingSecondAudio === false
-                        ? playSecondAudio
-                        : pauseSecondAudio
-                    }
-                  >
-                    {isPlayingSecondAudio === false ? <PlayIcon /> : <PauseIcon /> }
+                  <S.IntroArticleContainerCarouselItemButton>
+                    { isPlayingSecondAudio === false ? <PlayIcon /> : <PauseIcon /> }
                   </S.IntroArticleContainerCarouselItemButton>
                 </S.IntroArticleContainerCarouselItemWrapper>
               </S.IntroArticleContainerCarouselItem>
               <S.IntroArticleContainerCarouselItem>
-                <S.IntroArticleContainerCarouselItemImage>
+                <S.IntroArticleContainerCarouselItemImage
+                  onClick={
+                    isPlayingThirdAudio === false
+                      ? playThirdAudio
+                      : pauseThirdAudio
+                  }
+                >
                   <Image
                     src={ImageEminem}
                     width='0'
@@ -295,19 +301,19 @@ const Intro = () => {
                     src={require('../../public/audio/artistmusic03.mp3')}
                     ref={audioPlayerThird}
                   />
-                  <S.IntroArticleContainerCarouselItemButton
-                    onClick={
-                      isPlayingThirdAudio === false
-                        ? playThirdAudio
-                        : pauseThirdAudio
-                    }
-                  >
-                    {isPlayingThirdAudio === false ? <PlayIcon /> : <PauseIcon /> }
+                  <S.IntroArticleContainerCarouselItemButton>
+                    { isPlayingThirdAudio === false ? <PlayIcon /> : <PauseIcon /> }
                   </S.IntroArticleContainerCarouselItemButton>
                 </S.IntroArticleContainerCarouselItemWrapper>
               </S.IntroArticleContainerCarouselItem>
               <S.IntroArticleContainerCarouselItem>
-                <S.IntroArticleContainerCarouselItemImage>
+                <S.IntroArticleContainerCarouselItemImage
+                  onClick={
+                    isPlayingFirstAudio === false
+                      ? playFirstAudio
+                      : pauseFirstAudio
+                  }
+                >
                   <Image
                     src={ImageFiftyCent}
                     width='0'
@@ -321,20 +327,20 @@ const Intro = () => {
                     src={require('../../public/audio/artistmusic01.mp3')}
                     ref={audioPlayerFirst}
                   />
-                  <S.IntroArticleContainerCarouselItemButton
-                    onClick={
-                      isPlayingFirstAudio === false
-                        ? playFirstAudio
-                        : pauseFirstAudio
-                    }
-                  >
-                    {isPlayingFirstAudio === false ? <PlayIcon /> : <PauseIcon /> }
+                  <S.IntroArticleContainerCarouselItemButton>
+                    { isPlayingFirstAudio === false ? <PlayIcon /> : <PauseIcon /> }
                   </S.IntroArticleContainerCarouselItemButton>
                 </S.IntroArticleContainerCarouselItemWrapper>
               </S.IntroArticleContainerCarouselItem>
 
               <S.IntroArticleContainerCarouselItem>
-                <S.IntroArticleContainerCarouselItemImage>
+                <S.IntroArticleContainerCarouselItemImage
+                  onClick={
+                    isPlayingSecondAudio === false
+                      ? playSecondAudio
+                      : pauseSecondAudio
+                  }
+                >
                   <Image
                     src={imageBillieEilish}
                     width='0'
@@ -348,19 +354,19 @@ const Intro = () => {
                     src={require('../../public/audio/artistmusic02.mp3')}
                     ref={audioPlayerSecond}
                   />
-                  <S.IntroArticleContainerCarouselItemButton
-                    onClick={
-                      isPlayingSecondAudio === false
-                        ? playSecondAudio
-                        : pauseSecondAudio
-                    }
-                  >
-                    {isPlayingSecondAudio === false ? <PlayIcon /> : <PauseIcon /> }
+                  <S.IntroArticleContainerCarouselItemButton>
+                    { isPlayingSecondAudio === false ? <PlayIcon /> : <PauseIcon /> }
                   </S.IntroArticleContainerCarouselItemButton>
                 </S.IntroArticleContainerCarouselItemWrapper>
               </S.IntroArticleContainerCarouselItem>
               <S.IntroArticleContainerCarouselItem>
-                <S.IntroArticleContainerCarouselItemImage>
+                <S.IntroArticleContainerCarouselItemImage
+                  onClick={
+                    isPlayingThirdAudio === false
+                      ? playThirdAudio
+                      : pauseThirdAudio
+                  }
+                >
                   <Image
                     src={ImageEminem}
                     width='0'
@@ -374,14 +380,8 @@ const Intro = () => {
                     src={require('../../public/audio/artistmusic03.mp3')}
                     ref={audioPlayerThird}
                   />
-                  <S.IntroArticleContainerCarouselItemButton
-                    onClick={
-                      isPlayingThirdAudio === false
-                        ? playThirdAudio
-                        : pauseThirdAudio
-                    }
-                  >
-                    {isPlayingThirdAudio === false ? <PlayIcon /> : <PauseIcon /> }
+                  <S.IntroArticleContainerCarouselItemButton>
+                    { isPlayingThirdAudio === false ? <PlayIcon /> : <PauseIcon /> }
                   </S.IntroArticleContainerCarouselItemButton>
                 </S.IntroArticleContainerCarouselItemWrapper>
               </S.IntroArticleContainerCarouselItem>

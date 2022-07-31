@@ -21,7 +21,7 @@ export const IntroContainerHeader = styled.div`
     margin: 0 auto;
 
     @media screen and (max-width: 620px) {
-        width: 94%;
+        width: 85%;
     }
 `;
 
@@ -39,8 +39,8 @@ export const IntroContainerHeaderLogo = styled.div`
 
     @media screen and (min-width: 321px) and (max-width: 680px) {
         img {
-            width: 66px !important;
-            height: 66px !important;
+            width: 40px !important;
+            height: 40px !important;
         }
     }
 
@@ -115,7 +115,7 @@ export const IntroArticleContainer = styled.article`
     display: flex;
     align-items: center;
     width: 95%;
-    margin: 140px auto 0;
+    margin: 95px auto 0;
 
     @media screen and (max-width: 1080px) {
         flex-direction: column;
@@ -235,12 +235,17 @@ export const IntroArticleContainerButton = styled.button`
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
-        width: 85%;
+        width: 90%;
         z-index: 99;
     }
 
     img {
-        filter: brightness(.4);
+        filter: brightness(.35);
+    }
+
+    span {
+        display: flex;
+        align-items: center;
     }
     
     strong {
@@ -271,7 +276,6 @@ export const IntroArticleContainerCarouselItem = styled.div`
     position: relative;
     box-sizing: border-box;
     background: #222;
-    cursor: grab;
     
     @media screen and (min-width: 1081px) {
         margin-left: 40px;
@@ -280,7 +284,13 @@ export const IntroArticleContainerCarouselItem = styled.div`
     }
 `;
 
-export const IntroArticleContainerCarouselItemImage = styled.div`
+export const IntroArticleContainerCarouselItemImage = styled.button`
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border: none;
+    cursor: grabbing;
+
     img {
         object-fit: cover;
     }
