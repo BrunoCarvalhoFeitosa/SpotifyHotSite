@@ -17,7 +17,7 @@ export const CreateAccountContainerTitle = styled.div`
     margin: 0 auto;
     width: 50%;
 
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 1024px) {
         width: 90%;
     }
 
@@ -49,7 +49,7 @@ export const CreateAccountContainerDescription = styled.div`
     margin: 0 auto;
     width: 40%;
 
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 1024px) {
         width: 90%;
     }
 

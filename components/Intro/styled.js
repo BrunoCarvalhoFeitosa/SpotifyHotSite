@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const Intro = styled.section`
     width: 100%;
     background: #000;
+    padding-bottom: 70px;
 
     @media screen and (min-width: 1081px) {
-        height: 82vh;
     }
 `;
 
@@ -117,7 +117,7 @@ export const IntroArticleContainer = styled.article`
     width: 95%;
     margin: 95px auto 0;
 
-    @media screen and (max-width: 1080px) {
+    @media screen and (max-width: 1325px) {
         flex-direction: column;
         width: 90%;
     }
@@ -129,7 +129,7 @@ export const IntroArticlePanel = styled.div`
     left: -18px;
     opacity: .5;
     
-    @media screen and (min-width: 1081px) {
+    @media screen and (min-width: 1326px) {
         position: relative;
         bottom: 140px;
         top: initial;
@@ -163,7 +163,7 @@ export const IntroArticlePanelItem = styled.div`
 export const IntroArticleContainerText = styled.div`
     width: 100%;
 
-    @media screen and (min-width: 1081px) {
+    @media screen and (min-width: 1326px) {
         width: 45%;
         transform: translateX(-160px);
     }
@@ -172,8 +172,8 @@ export const IntroArticleContainerText = styled.div`
 export const IntroArticleContainerTitle = styled.h2`
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 60px;
+    line-height: 60px;
     font-weight: 900;
     color: #FFF;
 
@@ -183,8 +183,8 @@ export const IntroArticleContainerTitle = styled.h2`
     }
 
     @media screen and (min-width: 681px) and (max-width: 1080px) {
-        font-size: 70px;
-        line-height: 70px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
     &:nth-of-type(2) {
@@ -239,6 +239,10 @@ export const IntroArticleContainerButton = styled.button`
         z-index: 99;
     }
 
+    @media screen and (min-width: 1081px) and (max-width: 1325px) {
+        margin: 30px auto 60px;
+    }
+
     img {
         filter: brightness(.35);
     }
@@ -261,13 +265,14 @@ export const IntroArticleContainerButton = styled.button`
 export const IntroArticleContainerCarousel = styled.div`
     width: 100%;
     padding-bottom: 120px;
-
-    @media screen and (max-width: 1081px) {
-        padding-bottom: 50px;
+    
+    @media screen and (max-width: 1325px) {
+        width: 90%;
+        padding-bottom: 20px;
     }
 
-    @media screen and (min-width: 1081px) {
-        width: 52%;
+    @media screen and (min-width: 1326px) {
+        width: 48%;
         padding-bottom: 0;
     }
 `;
@@ -275,12 +280,6 @@ export const IntroArticleContainerCarousel = styled.div`
 export const IntroArticleContainerCarouselItem = styled.div`
     position: relative;
     box-sizing: border-box;
-    
-    @media screen and (min-width: 1081px) {
-        margin-left: 40px;
-        width: 300px !important;
-        height: 300px !important;
-    }
 `;
 
 export const IntroArticleContainerCarouselItemImage = styled.button`

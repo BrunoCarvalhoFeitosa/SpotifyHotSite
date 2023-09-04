@@ -6,7 +6,7 @@ export const Hero = styled.section`
     overflow: hidden;
     cursor: pointer;
     
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: 1325px) {
         height: 100vh;
     }
 `;
