@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/BrunoCarvalhoFeitosa/FacebookClone">
-    <img src="public\images\logo.png" alt="Logo" />
+    <img src="public\fav.png" alt="Logo" width="100" height="100" />
   </a>
 
   <p align="center">
@@ -30,10 +30,8 @@
         <li><a href="#instalação">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#uso">Uso</a></li>
-    <li><a href="#license">Licenças</a></li>
+    <li><a href="#licença">Licenças</a></li>
     <li><a href="#contato">Contato</a></li>
-    <li><a href="#reconhecimentos">Reconhecimentos</a></li>
   </ol>
 </details>
 
@@ -85,7 +83,7 @@ Primeiramente será necessário clonar este projeto em (https://github.com/Bruno
    ```   
 
 <!-- LICENSE -->
-## License
+## Licença
 
 Distribuído sob a licença MIT.
 
