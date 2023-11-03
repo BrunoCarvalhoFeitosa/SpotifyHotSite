@@ -1,12 +1,11 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import ImageAllDevices from '/public/vectors/all-devices.svg';
-
-import * as S from './styled';
+import Image from "next/image"
+import Link from "next/link"
+import ImageAllDevices from "/public/vectors/all-devices.svg"
+import * as S from "./styled"
 
 const Download = () => {
   return (
-    <S.Download className='downloadSection'>
+    <S.Download className="downloadSection">
       <S.DownloadContainer>
         <S.DownloadContainerTitle>
           Baixe o Spotify, é <strong>de graça</strong> e <strong>sempre será.</strong>
@@ -19,54 +18,54 @@ const Download = () => {
             src={ImageAllDevices}
             width={800}
             height={200}
-            alt='Dispositivos'
+            alt="Dispositivos"
           />
         </S.DownloadContainerDevices>
         <S.DownloadContainerDevicesList>
           <S.DownloadContainerDevicesListItem>
-            <Link href='https://spotify.link/T1vKH6Kr9ib?label=sp_cid%3A773fe976-ed48-4ca6-9ada-1ac42a8d65d8' passHref>
+            <Link href="https://spotify.link/T1vKH6Kr9ib?label=sp_cid%3A773fe976-ed48-4ca6-9ada-1ac42a8d65d8" passHref>
               Celular    
             </Link>
             </S.DownloadContainerDevicesListItem>
             <S.DownloadContainerDevicesListItem>
-            <Link href='https://spotify.link/T1vKH6Kr9ib?label=sp_cid%3A773fe976-ed48-4ca6-9ada-1ac42a8d65d8' passHref>
+            <Link href="https://spotify.link/T1vKH6Kr9ib?label=sp_cid%3A773fe976-ed48-4ca6-9ada-1ac42a8d65d8" passHref>
               Tablet
             </Link>
             </S.DownloadContainerDevicesListItem>
             <S.DownloadContainerDevicesListItem>
-            <Link href='https://www.microsoft.com/store/p/spotify-music/9ncbcszsjrsb?cid=spotifyweb-windows10-store-direct' passHref>
+            <Link href="https://www.microsoft.com/store/p/spotify-music/9ncbcszsjrsb?cid=spotifyweb-windows10-store-direct" passHref>
               Computador
             </Link>
             </S.DownloadContainerDevicesListItem>
             <S.DownloadContainerDevicesListItem>
-            <Link href='https://spotify-everywhere.com/pages/gaming' passHref>
+            <Link href="https://spotify-everywhere.com/pages/gaming" passHref>
               PlayStation
             </Link>
             </S.DownloadContainerDevicesListItem>
             <S.DownloadContainerDevicesListItem>
-            <Link href='https://spotify-everywhere.com/pages/gaming' passHref>
+            <Link href="https://spotify-everywhere.com/pages/gaming" passHref>
               XBOX
             </Link>
             </S.DownloadContainerDevicesListItem>
             <S.DownloadContainerDevicesListItem>
-            <Link href='https://spotify-everywhere.com/collections/tv' passHref>
+            <Link href="https://spotify-everywhere.com/collections/tv" passHref>
               TV
             </Link>
             </S.DownloadContainerDevicesListItem>
             <S.DownloadContainerDevicesListItem>
-            <Link href='https://open.spotify.com'>
+            <Link href="https://bruno-carvalho-feitosa-spotify-clone.vercel.app">
               Web Player
             </Link>
             </S.DownloadContainerDevicesListItem>
             <S.DownloadContainerDevicesListItem>
-            <Link href='https://spotify-everywhere.com/collections/car-audio' passHref>
+            <Link href="https://spotify-everywhere.com/collections/car-audio" passHref>
               Carro
             </Link>
           </S.DownloadContainerDevicesListItem>
         </S.DownloadContainerDevicesList>
       </S.DownloadContainer>
     </S.Download>
-  );
-};
+  )
+}
 
-export default Download;
+export default Download

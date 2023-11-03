@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react"
 import {
   EmailShareButton,
   EmailIcon,
@@ -20,43 +20,43 @@ import {
   RedditIcon,
   TumblrShareButton,
   TumblrIcon
-} from 'react-share';
-import { XIcon, DocumentDuplicateIcon, CheckIcon } from '@heroicons/react/outline'
+} from "react-share"
+import { XIcon, DocumentDuplicateIcon, CheckIcon } from "@heroicons/react/outline"
 
-import * as S from './styled';
+import * as S from "./styled"
 
 const SharePage = ({ isOpenSharePage, setIsOpenSharePage }) => {
-  const [shareUrl, setShareUrl] = useState('');
-  const [isCopied, setIsCopied] = useState(false);
-  const title = 'Spotify';
+  const [shareUrl, setShareUrl] = useState("")
+  const [isCopied, setIsCopied] = useState(false)
+  const title = "Spotify"
 
   useEffect(() => {
-    setShareUrl(window.location.href);
-  }, [setShareUrl]);
+    setShareUrl(window.location.href)
+  }, [setShareUrl])
 
   useEffect(() => {
     const handleCloseSharePageOnEscape = (event) => {
-      event.keyCode === 27 && setIsOpenSharePage(false);
-    };
+      event.keyCode === 27 && setIsOpenSharePage(false)
+    }
 
-    window.addEventListener('keydown', handleCloseSharePageOnEscape);
+    window.addEventListener("keydown", handleCloseSharePageOnEscape)
     
     return () => {
-      window.removeEventListener('keydown', handleCloseSharePageOnEscape);
-    };
-  }, []);
+      window.removeEventListener("keydown", handleCloseSharePageOnEscape)
+    }
+  }, [])
 
   const handleCloseSharePage = () => {
-    setIsOpenSharePage(false);
-    setIsCopied(false);
+    setIsOpenSharePage(false)
+    setIsCopied(false)
   }
 
   
 
   const handleCopyUrl = () => {
-    navigator.clipboard.writeText(shareUrl);
-    setIsCopied(true);
-  };
+    navigator.clipboard.writeText(shareUrl)
+    setIsCopied(true)
+  }
   
   return (
     <>
@@ -88,34 +88,34 @@ const SharePage = ({ isOpenSharePage, setIsOpenSharePage }) => {
                   </S.SharePageAlternativeOptionsTitle>
                 </S.SharePageAlternativeOptionsTitleContainer>
                 <S.SharePageAlternativeOptionsWrapper>
-                  <EmailShareButton url={shareUrl} quote={title} title='E-mail'>
+                  <EmailShareButton url={shareUrl} quote={title} title="E-mail">
                     <EmailIcon size={35} round />
                   </EmailShareButton>
-                  <WhatsappShareButton url={shareUrl} quote={title} title='WhatsApp'>
+                  <WhatsappShareButton url={shareUrl} quote={title} title="WhatsApp">
                     <WhatsappIcon size={35} round />
                   </WhatsappShareButton>
-                  <FacebookShareButton url={shareUrl} quote={title} title='Facebook'>
+                  <FacebookShareButton url={shareUrl} quote={title} title="Facebook">
                     <FacebookIcon size={35} round />
                   </FacebookShareButton>
-                  <FacebookMessengerShareButton url={shareUrl} quote={title} title='Messenger'>
+                  <FacebookMessengerShareButton url={shareUrl} quote={title} title="Messenger">
                     <FacebookMessengerIcon size={35} round />
                   </FacebookMessengerShareButton>
-                  <TwitterShareButton url={shareUrl} quote={title} title='Twitter'>
+                  <TwitterShareButton url={shareUrl} quote={title} title="Twitter">
                     <TwitterIcon size={35} round />
                   </TwitterShareButton>
-                  <TelegramShareButton url={shareUrl} quote={title} title='Telegram'>
+                  <TelegramShareButton url={shareUrl} quote={title} title="Telegram">
                     <TelegramIcon size={35} round />
                   </TelegramShareButton>
-                  <LinkedinShareButton url={shareUrl} quote={title} title='LinkedIn'>
+                  <LinkedinShareButton url={shareUrl} quote={title} title="LinkedIn">
                     <LinkedinIcon size={35} round />
                   </LinkedinShareButton>
-                  <PinterestShareButton url={shareUrl} quote={title} title='Pinterest'>
+                  <PinterestShareButton url={shareUrl} quote={title} title="Pinterest">
                     <PinterestIcon size={35} round />
                   </PinterestShareButton>
-                  <RedditShareButton url={shareUrl} quote={title} title='Reddit'>
+                  <RedditShareButton url={shareUrl} quote={title} title="Reddit">
                     <RedditIcon size={35} round />
                   </RedditShareButton>
-                  <TumblrShareButton url={shareUrl} quote={title} title='Tumblr'>
+                  <TumblrShareButton url={shareUrl} quote={title} title="Tumblr">
                     <TumblrIcon size={35} round />
                   </TumblrShareButton>
                 </S.SharePageAlternativeOptionsWrapper>
@@ -125,7 +125,7 @@ const SharePage = ({ isOpenSharePage, setIsOpenSharePage }) => {
         </S.SharePage>
       )}
     </>
-  );
-};
+  )
+}
 
-export default SharePage;
+export default SharePage

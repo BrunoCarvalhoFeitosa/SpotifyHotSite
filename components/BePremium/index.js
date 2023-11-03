@@ -1,4 +1,4 @@
-import * as S from './styled';
+import * as S from "./styled"
 
 const BePremium = () => {
   return (
@@ -7,7 +7,7 @@ const BePremium = () => {
         <S.BePremiumContainerOffers />
       </S.BePremiumContainer>
     </S.BePremium>
-  );
-};
+  )
+}
 
-export default BePremium;
+export default BePremium

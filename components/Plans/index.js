@@ -1,10 +1,9 @@
-import { CheckIcon } from '@heroicons/react/solid';
-
-import * as S from './styled';
+import { CheckIcon } from "@heroicons/react/solid"
+import * as S from "./styled"
 
 const Plans = () => {
   return (
-    <S.Plans className='plansSection'>
+    <S.Plans className="plansSection">
       <S.PlansContainer>
         <S.PlansContainerTitle>
           Experimente o Spotify Premium por <strong>1 mês gratuitamente.</strong>
@@ -158,7 +157,7 @@ const Plans = () => {
         </S.PlansContainerTablePrices>
       </S.PlansContainer>
     </S.Plans>
-  );
-};
+  )
+}
 
-export default Plans;
+export default Plans
